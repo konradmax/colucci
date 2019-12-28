@@ -11,9 +11,15 @@ router.get('/', (req, res) => {
 	}
 
 	res.render('index', data)
-})
+});
 
+router.get('/shop', (req, res) => {
 
+	const data = {
+	greeting: 'Colucci'
+	}
 
+	res.render('shop-page', data)
+});
 
 module.exports = router
