@@ -1,38 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<!--Basic Page Needs-->
-	<title>Colucci</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Colucci">
-	<meta name="author" content="Colucci">
-	<meta name="keywords" content="Colucci">
-	<!--Mobile Specific Metas-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+{{>header}}
 
-	<link rel="icon" type="image/png" href="images/icons/home-boxed-logo.png"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/navigation.css">
-	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/settings.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker-bootstrap/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/dist/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-<!--===============================================================================================-->
-</head>
 <body  class="animsition">
 
 	<header>
@@ -302,6 +269,8 @@
 					<h6>spróbuj i odkryj</h6>
 					<h2>Nasz Asortyment</h2>
 				</div>
+
+				{{>placek}}
 			</div>
 
 			<!-- food menu -->
@@ -1211,131 +1180,4 @@
 		</div>
 	</div>
 
-	<footer>
-		<div class="container">
-			<div class="content-footer row">
-				<div class="column-footer col-lg-5 col-md-8 col-sm-7">
-					<h3>Dane Kontaktowe</h3>
-					<ul>
-						<li>ADRES: Gola 8, 59-300 Lubin</li>
-						<li>BIURO: (076) 123 12 12</li>
-						<li id="follow-us">ŚLEDŹ NAS NA: 
-							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="column-footer col-lg-4 col-md-5 col-sm-7">
-					<h3>Godziny otwarcia</h3>
-					<ul id="restaurant-hours">
-						<li>
-							<span class="span-left">Serwis:</span>
-						</li>
-						<li>
-							<span class="span-left">Poniedziałek - Piątek</span>
-							<span class="span-right">8:00 - 16:00</span>
-						</li>
-						<li>
-							<span class="span-left">Sobota - Niedziela</span>
-							<span class="span-right">8:00 - 12:00</span>
-						</li>
-						<li>
-							<span class="span-left">Biuro:</span>
-						</li>
-						<li>
-							<span class="span-left">Poniedziałek - Piątek</span>
-							<span class="span-right">8:00 - 16:00</span>
-						</li>
-						<li>
-							<span class="span-left">Sobota - Niedziela</span>
-							<span class="span-right">8:00 - 12:00</span>
-						</li>
-					</ul>
-					<div class="line-divide first-line"></div>
-				</div>
-
-				<div class="column-footer col-lg-3 col-md-3 col-sm-7">
-					<h3>Użyteczne linki</h3>
-					<ul id="useful-links">
-						<li>
-							<span class="span-left">
-								<a href="/">Strona Główna</a>
-							</span> 
-							<span class="span-right">
-								<a href="/shop">Sklep</a>
-							</span>
-						</li>
-						<li>
-							<span class="span-left">
-								<a href="menu-01.html">Asortyment</a>
-							</span> 
-							<span class="span-right">
-								<a href="blog-list-with-sidebar-01.html">Blog</a>
-							</span>
-						</li>
-						<li>
-							<span class="span-left">
-								<a href="reservation-01.html">Awaria</a>
-							</span> 
-							<span class="span-right">
-								<a href="contact-us.html">Kontakt</a>
-							</span>
-						</li>
-						<li><a href="about-us.html">O nas</a></li>
-					</ul>
-					<div class="line-divide second-line"></div>
-				</div>
-			</div>
-		</div>
-		<div class="wrap-bottom-footer">
-		<a id="example"></a>
-			
-		</div>
-	</footer>
-	
-	<!-- Back to top -->
-	<div class="btn-back-to-top" id="myBtn">
-		<span class="symbol-btn-back-to-top">
-			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
-		</span>
-	</div>
-	
-
-
-<!--===============================================================================================-->	
-	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/wow/wow.min.js"></script>
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/animsition/dist/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/bootstrap/js/popper.min.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->	
-	<script type="text/javascript" src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-	<script type="text/javascript" src="vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-	<script src="js/slide-custom.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/moment.min.js"></script>
-	<script type="text/javascript" src="vendor/daterangepicker-bootstrap/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-</body>
-</html>
+{{>footer}}

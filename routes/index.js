@@ -7,7 +7,7 @@ const router = vertex.router()
 router.get('/', (req, res) => {
 
 	const data = {
-	greeting: 'Colucci'
+	title: 'Colucci'
 	}
 
 	res.render('index', data)
@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 router.get('/shop', (req, res) => {
 
 	const data = {
-	greeting: 'Colucci'
+	title: 'Colucci Shop'
 	}
 
 	res.render('shop-page', data)
