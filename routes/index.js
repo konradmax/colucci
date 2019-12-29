@@ -22,4 +22,13 @@ router.get('/shop', (req, res) => {
 	res.render('shop-page', data)
 });
 
+router.get('/shopping-cart', (req, res) => {
+
+	const data = {
+	title: 'Colucci koszyk'
+	}
+
+	res.render('shopping-cart', data)
+});
+
 module.exports = router
