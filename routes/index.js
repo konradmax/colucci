@@ -31,4 +31,13 @@ router.get('/shopping-cart', (req, res) => {
 	res.render('shopping-cart', data)
 });
 
+router.get('/product-detail', (req, res) => {
+
+	const data = {
+	title: 'Colucci product detail'
+	}
+
+	res.render('product-detail', data)
+});
+
 module.exports = router

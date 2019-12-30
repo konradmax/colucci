@@ -23,7 +23,7 @@
         $.notify({
          icon: "fa fa-shopping-cart",
          title: nameProduct,
-         message: "is added to card"
+         message: "dodano do koszyka"
        },{
         type: 'success',
         animate: {
