@@ -40,4 +40,12 @@ router.get('/product-detail', (req, res) => {
 	res.render('product-detail', data)
 });
 
+router.get('/o-nas', (req, res) => {
+
+	const data = {
+	title: 'Colucci O nas'
+	}
+
+	res.render('o-nas', data)
+});
 module.exports = router
