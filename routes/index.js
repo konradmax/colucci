@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 router.get('/shop', (req, res) => {
 
 	const data = {
-	title: 'Colucci Shop'
+	title: 'Sklep'
 	}
 
 	res.render('shop-page', data)
@@ -25,7 +25,7 @@ router.get('/shop', (req, res) => {
 router.get('/shopping-cart', (req, res) => {
 
 	const data = {
-	title: 'Colucci koszyk'
+	title: 'Koszyk'
 	}
 
 	res.render('shopping-cart', data)
@@ -34,7 +34,7 @@ router.get('/shopping-cart', (req, res) => {
 router.get('/product-detail', (req, res) => {
 
 	const data = {
-	title: 'Colucci product detail'
+	title: 'Szczegóły Produktu'
 	}
 
 	res.render('product-detail', data)
@@ -43,7 +43,7 @@ router.get('/product-detail', (req, res) => {
 router.get('/o-nas', (req, res) => {
 
 	const data = {
-	title: 'Colucci O nas'
+	title: 'O nas'
 	}
 
 	res.render('o-nas', data)
