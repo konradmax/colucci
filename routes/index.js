@@ -48,4 +48,14 @@ router.get('/o-nas', (req, res) => {
 
 	res.render('o-nas', data)
 });
+
+router.get('/kontakt', (req, res) => {
+
+	const data = {
+	title: 'Kontakt'
+	}
+
+	res.render('kontakt', data)
+});
+
 module.exports = router
