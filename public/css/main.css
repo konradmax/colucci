@@ -206,7 +206,7 @@ iframe {
 	left: 0; 
 }
 .menu {
-	width: 820px;
+	width: 550px;
 	height: 100%;
 	position: relative;
 	margin: auto;
@@ -3778,7 +3778,7 @@ background-color: #999999;
 
 
 /*=================================================================== Loading ===*/
-.animsition-loading {
+.animation-loading {
   background-color: transparent;
   border-top: 5px solid rgba(255, 0, 0, 0.3);
   border-right: 5px solid rgba(255, 0, 0, 0.3);
