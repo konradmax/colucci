@@ -1,9 +1,7 @@
 (function ($) {
     "use strict";
 
-    $(document).ready(function() {
-      var btnAddToCart = $('.add-to-cart');
-      var btnAddToCartProduct = $('.btn-add-to-cart-product');
+
 
       btnAddToCart.each(function(){
       	$(this).on('click', function(){
