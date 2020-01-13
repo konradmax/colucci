@@ -57,17 +57,6 @@
 	}
 
 
-	/*==============================================[ Select2 & Daterangepicker ]==*/
-	$(".chose-people").select2();
-	$(".chose-time").select2();
-	$(".chose-sort").select2({
-		minimumResultsForSearch: Infinity
-	});
-
-	$('.my-calendar').daterangepicker({
-		"singleDatePicker": true,
-		"showDropdowns": true,
-	});
 
 
 	/*==============================================[ Show content in Product detail ]==*/
@@ -95,27 +84,6 @@
 		}
 	});
 
-
-	/*==============================================[ Icon Paypal ]==*/
-	var btnPaypal = $('.wrap-icon-pay');
-	var btn_is_active = -1;
-
-	for(var i=0; i<btnPaypal.length; i++){
-		$(btnPaypal[i]).on('click', function(){
-			
-				if($(this).index() == btn_is_active){
-					$(this).children('.img-color').toggleClass('active');
-					btn_is_active = -1;
-				}
-				else {
-					for (var i = 0; i < btnPaypal.length; i++) {
-	            		$(btnPaypal[i]).children('.img-color').removeClass("active");
-	        		}
-	        		$(this).children('.img-color').toggleClass('active'); 
-					btn_is_active = $(this).index();
-				}
-		});
-	}
 
 
 	/*==============================================[ back to top ]==*/

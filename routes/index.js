@@ -223,4 +223,13 @@ router.get('/pd-wfp2200', (req, res) => {
 	res.render('pd-wfp2200', data)
 });
 
+router.get('/produkty', (req, res) => {
+
+	const data = {
+	title: 'PRODUKTY'
+	}
+
+	res.render('produkty', data)
+});
+
 module.exports = router
