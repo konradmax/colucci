@@ -6,12 +6,12 @@
         /* initialize the slider based on the Slider's ID attribute */
         jQuery('#rev_slider_1').show().revolution({
             
-            responsiveLevels: [1200, 992, 768, 576],
-            gridwidth:[1200, 992, 768, 576],
+            responsiveLevels: [1200, 1000, 768, 576],
+            gridwidth:[1200, 1000, 768, 576],
             delay: 5000,
+            
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
-            sliderLayout: 'fullscreen',
-            autoHeight: 'on',
+         
             /* options that disable autoplay */
             /*stopLoop: 'on',
             stopAfterLoops: 0,
@@ -123,12 +123,12 @@ var screenH = $(window).height();
         jQuery('#rev_slider_3').show().revolution({
             
             responsiveLevels: [1200, 992, 768, 576],
-            gridwidth:[1200, 992, 768, 576],
+            gridwidth:[1200, 992, 676],
             delay: 5000,
             /* options are 'auto', 'fullwidth' or 'fullscreen' */
             sliderLayout: 'auto', 
             autoHeight: 'on',
-            minHeight: 690,
+            minHeight: screenH,
             /* options that disable autoplay */
             /*stopLoop: 'on',
             stopAfterLoops: 0,

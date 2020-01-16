@@ -143,17 +143,19 @@
 				$('.arrow-main-menu').removeClass('turn-arrow');
 			}
 		}
-	});
-
-	$(document).on("scroll", function() {
+    });
+    
+    /* ====== jebane gówno ======
+    $(document).on("scroll", function() {
 
         if($(document).scrollTop()>100) {
-            $("header").removeClass("wrap_header").addClass("wrap_header1");
+            $("header").removeClass("large").addClass("small");
         } else {
-            $("header").removeClass("wrap_header1").addClass("wrap_header");
+            $("header").removeClass("small").addClass("large");
         }
         
     });
+    */
 
 })
 (jQuery);

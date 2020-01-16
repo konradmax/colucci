@@ -58,12 +58,15 @@ a{
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	color: inherit;
 }
 a:hover {
 	text-decoration: none;
 	color: #e52233;
 }
+
+
 p {
 	font-family: OpenSans;
 	font-size: 14px;
@@ -150,22 +153,26 @@ iframe {
 
 /*=================================================================== Header Desktop ===*/
 
-
 .wrap_header {
 	position: relative;
 	z-index: 1000;
 	width: 100%;
-    height: 70px;
-    background-color: #222222;
+	height: 70px;
+	background-color: #222222;
 }
 .wrap_header1 {
-    position: fixed;
-    z-index: 1000;
+	position: fixed;
+	z-index: 1000;
 	background-color: #222222;
 	width: 100%;
-	height: 100px;
-	
+	height: 70px;
+	opacity: 90%;
 }
+
+.kontener{
+	height: 100vh;
+}
+
 /* Transitions */
 
 header,
@@ -180,15 +187,15 @@ li {
 }
 
 .tekst-tomka {
-	background-color: black;
-	padding-top: 40px;
+	background-color: #222222;
+	padding-top: 10px;
 }
 .tekst-width {
 	width: 70%;
 	margin-left: 15%;
 	margin-right: 15%;
+	height: 100%;
 }
-
 
 /* #wrap_header a {
 	transition: all 0.4s;
@@ -217,6 +224,7 @@ li {
 	max-width: 100%;
 	vertical-align: middle;
 }
+
 
 /*------------------------------------------------------------------- Menu ---*/
 @keyframes showSubMenu {
@@ -497,15 +505,20 @@ li {
 	height: 10px;
     background-color: #e52233;
 }
+
+.eloelo { 
+	min-height: 100vh;
+	background-color:#222222;
+}
+
 #slider-deli .caption-1 {
 	font-family: PlayfairDisplay-Bold;
-	font-size: 110px;
+	font-size: 100px;
 	color: white;
 	line-height: 1.5;
 	white-space: normal;
 	text-align: center !important;
 	text-shadow: 2px 2px 4px #000000;
-
 }
 
 #slider-deli .caption-2 {
@@ -805,19 +818,18 @@ li {
 }
 .text-reservation h3 {
 	font-family: PlayfairDisplay-Bold;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	color: white;
 }
 .text-reservation h6 {
 	font-family: OpenSans;
-	text-transform: uppercase;
 	font-size: 14px;
-	line-height: 2.2;
-	text-align: center;
-	letter-spacing: 1px;
-	color: #888888;
+	text-align: justify;
+	color: white;
+	line-height: 1.6;
 }
+
 
 .btn-find-table {
 	width: 100%;
@@ -1051,6 +1063,16 @@ footer ul li a:hover {
 	padding-top: 105px;
 	padding-bottom: 85px;
 }
+
+.wrap-intro1 {
+	background-image: url('../images/bg-intro.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-top: 105px;
+	padding-bottom: 85px;
+}
+
 .text-intro {padding-top: 20px;}
 .text-intro h3 {
 	font-family: OpenSans;
@@ -1217,6 +1239,7 @@ footer ul li a:hover {
 	padding-top: 180px;
 }
 
+
 .wrap-title-sub-page {
 	text-align: center;
 }
@@ -1224,14 +1247,14 @@ footer ul li a:hover {
 	font-family: PlayfairDisplay-Bold;
 	font-size: 60px;
 	line-height: 1.3;
-	color: white;
+	color: rgb(22, 22, 22);
 }
 .title-s {
 	font-family: OpenSans;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 2.2;
-	color: #c6c6c6;
+	color: #999999;
 	margin-top: 18px;
 	margin-bottom: 0px;
 }
@@ -1263,6 +1286,14 @@ footer ul li a:hover {
 }
 .bg-menu-page-02 {
 	background-image: url('../images/img-title-menu-page-02.jpg');
+}
+
+.bg-menu-page-03 {
+	background-image: url('../images/img-title-menu-page-03.jpg');
+}
+
+.bg-menu-page-04 {
+	background-image: url('../images/img-title-menu-page-04.jpg');
 }
 .content-menu-02 .hover-img {
 	display: block;
@@ -1601,9 +1632,10 @@ footer ul li a:hover {
 /*///////////////////////////////////////////////////////////////////////////////////// Shop Page /*/
 
 .content-shop-page {
-	padding-top: 100px;
 	padding-bottom: 100px;
 }
+
+
 
 /*------------------------------------------------------------------- Sort by & sort result ---*/
 .content-shop-page .select2-container--default .select2-selection--single {

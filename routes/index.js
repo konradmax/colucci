@@ -232,4 +232,6 @@ router.get('/produkty', (req, res) => {
 	res.render('produkty', data)
 });
 
+
+
 module.exports = router
