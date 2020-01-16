@@ -188,7 +188,7 @@ li {
 
 .tekst-tomka {
 	background-color: #222222;
-	padding-top: 10px;
+	padding-top: 30px;
 }
 .tekst-width {
 	width: 70%;
@@ -248,11 +248,11 @@ li {
 	left: 0; 
 }
 .menu {
-	width: 610px;
+	width: 60vw;
 	height: 100%;
 	position: relative;
 	margin: auto;
-}
+}	
 .main_menu {
 	list-style-type: none;
 	display: block;
@@ -261,8 +261,7 @@ li {
 	position: relative;
 }
 .main_menu>li {
-	display: block;
-	float: left;
+	display: inline;
 	height: 100%;
 	position: relative;	
 	padding-left: 15px;
@@ -334,13 +333,13 @@ li {
 /* .show_sub_menu>span {
 	transform: rotate(90deg);
 } */
-.sub_menu li, .sub_menu a {
+.sub_menu li, .sub_menu a { 
 	padding: 10px;
 	font-family: OpenSans;
 	font-size: 14px;
 	color: #c6c6c6;
 }
-.sub_menu>li:first-child {padding-top: 20px;}
+.sub_menu>li:first-child {padding-top: 35px;}
 .sub_menu>li:last-child {padding-bottom: 20px;}
 
 /*------------------------------------------------------------------- Icon header ---*/
@@ -506,10 +505,6 @@ li {
     background-color: #e52233;
 }
 
-.eloelo { 
-	min-height: 100vh;
-	background-color:#222222;
-}
 
 #slider-deli .caption-1 {
 	font-family: PlayfairDisplay-Bold;
