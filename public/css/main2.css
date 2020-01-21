@@ -1075,20 +1075,20 @@ footer ul li a:hover {
 .text-intro {padding-top: 20px;}
 .text-intro h3 {
 	font-family: OpenSans;
-	font-size: 14px;
+	font-size: 13px;
 	color: #666666;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 }
 .text-intro h2 {
 	font-family: PlayfairDisplay-Bold;
-	font-size: 50px;
+	font-size: 40px;
 	color: #333333;
 	margin-bottom: 40px;
 }
 .text-intro p {
 	font-family: OpenSans;
-	font-size: 14px;
+	font-size: 13px;
 	color: #666666;
 	line-height: 1.8;
 }
