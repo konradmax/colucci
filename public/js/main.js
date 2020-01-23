@@ -147,7 +147,7 @@
 
 	$(document).on("scroll", function() {
 
-        if($(document).scrollTop()>0) {
+        if($(document).scrollTop()>70) {
             $("header").removeClass("wrap_header").addClass("wrap_header1");
         } else {
             $("header").removeClass("wrap_header1").addClass("wrap_header");

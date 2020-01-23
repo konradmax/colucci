@@ -154,7 +154,7 @@ iframe {
 /*=================================================================== Header Desktop ===*/
 
 .wrap_header {
-	position: relative;
+	position: fixed;
 	z-index: 1000;
 	width: 100%;
 	height: 70px;
@@ -166,7 +166,7 @@ iframe {
 	background-color: #222222;
 	width: 100%;
 	height: 70px;
-	opacity: 90%;
+	opacity: 80%;
 }
 
 .kontener{
@@ -533,6 +533,10 @@ li {
 .btn-slide {
 	text-align: center !important;
 }
+#slider-deli {
+	padding-top: 70px;
+	background-color: #222222;
+}
 
 .btn1, .btn2 {
 	display: inline-block;
@@ -715,7 +719,8 @@ li {
 }
 
 .wrap-title-event {
-	padding-bottom: 85px;
+	padding-bottom: 140px;
+	padding-top: 30px;
 }
 
 #title-event {
@@ -1486,7 +1491,7 @@ footer ul li a:hover {
 
 /*///////////////////////////////////////////////////////////////////////////////////// Contact Us /*/
 .content-contact-us {
-	padding-top: 100px;
+	padding-top: 170px;
 	padding-bottom: 100px;
 }
 .content-contact-us ul li {
@@ -1496,12 +1501,15 @@ footer ul li a:hover {
 	font-size: 14px;
 	line-height: 2.14;
 }
+
+.content-contact-us a {
+	text-decoration: none;
+}
 .content-contact-us ul li a {
 	color: #666666;
 	font-family: OpenSans;
 	font-size: 15px;
 	line-height: 2.14;
-	font-weight: bold;
 }
 .content-contact-us ul li a:hover {
 	text-decoration: none; 
