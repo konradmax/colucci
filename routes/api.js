@@ -21,7 +21,7 @@ router.get('/email', (req, res) => {
 
 	const message = {
     from: 'formularzcolucci@colucci.pl',
-		to: '',         // Do uzupełnienia gdzie ma sie docelowo wysyłać
+		to: 'k.max@colucci.pl',         // Do poprawienia gdzie ma sie docelowo wysyłać
     subject: 'Wiadomość ze strony Colucci',
     text: text
 	};
