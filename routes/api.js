@@ -2,26 +2,42 @@
 const turbo = require('turbo360')({site_id: process.env.TURBO_APP_ID})
 const vertex = require('vertex360')({site_id: process.env.TURBO_APP_ID})
 const router = vertex.router()
+const nodemailer = require('nodemailer');
+
+let transport = nodemailer.createTransport({
+	host: 'smtp.colucci.pl',
+	port: 465,
+	auth: {
+		 user: 'formularzcolucci',
+		 pass: 'Formularz1!'
+	}
+});
 
 /*  This is a sample API route. */
 
-router.get('/:resource', (req, res) => {
-	res.json({
-		confirmation: 'success',
-		resource: req.params.resource,
-		query: req.query // from the url query string
-	})
+router.get('/email', (req, res) => {
+	const data = JSON.parse(req.query.data);
+	const text = `Wysłano wiadomość od: ${data.name} \n Nr telefonu: ${data.telephone} \n Temat wiadomości: ${data.subject} \n Wiadomość: ${data.message}`;
+
+	const message = {
+    from: 'formularzcolucci@colucci.pl',
+		to: 'k.max@colucci.pl',         // Do poprawienia gdzie ma sie docelowo wysyłać
+    subject: 'Wiadomość ze strony Colucci',
+    text: text
+	};
+
+	transport.sendMail(message, function(err, info) {
+			if (err) {
+				console.log(err)
+			} else {
+				console.log(info);
+			}
+
+			res.json({
+				status: err ? false : true,
+				message: err ? err : info
+			});
+	});
 })
-
-router.get('/:resource/:id', (req, res) => {
-	res.json({
-		confirmation: 'success',
-		resource: req.params.resource,
-		id: req.params.id,
-		query: req.query // from the url query string
-	})
-})
-
-
 
 module.exports = router
